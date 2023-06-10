@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #030C11;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.BienvenidaControlador">
+   <children>
+      <ImageView fitHeight="374.0" fitWidth="600.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/mas-de-76-fondos-de-pantalla-de-space-stars.-imagen-de-estrellas-1024x620.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutY="-55.0" prefHeight="119.0" prefWidth="600.0" style="-fx-background-color: #030C11;">
+         <children>
+            <Label contentDisplay="RIGHT" layoutX="14.0" layoutY="68.0" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/imagen_2023-06-08_193029193.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Myanmar Text" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnAdministrador" contentDisplay="RIGHT" layoutX="159.0" layoutY="74.0" mnemonicParsing="false" onAction="#showAdministrador" pickOnBounds="false" style="-fx-background-color: transparent;" text="Administrador" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnCartelera" contentDisplay="RIGHT" layoutX="243.0" layoutY="74.0" mnemonicParsing="false" onAction="#showCartelera" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: #030C11;" text="Ver cartelera " textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnDulceria" contentDisplay="RIGHT" layoutX="424.0" layoutY="74.0" mnemonicParsing="false" onAction="#showDulceria" style="-fx-background-color: transparent;" text="Dulceria" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnMiCuenta" contentDisplay="RIGHT" layoutX="347.0" layoutY="74.0" mnemonicParsing="false" onAction="#showMiCuenta" style="-fx-background-color: #030C11;" text="Mi Cuenta" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Button fx:id="btnSalir" layoutX="516.0" layoutY="359.0" mnemonicParsing="false" onAction="#salir" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: transparent;" text="Salir" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="174.0" layoutY="190.0" text="¿QUE DESEAS HACER EL DIA DE HOY?" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

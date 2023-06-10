@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.LoginControlador">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <left>
+            <AnchorPane prefHeight="400.0" prefWidth="270.0" style="-fx-background-color: #020202; -fx-border-color: white; -fx-border-width: 0px 1px 0px 0px;" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="textFieldCorreoElec" layoutX="35.0" layoutY="133.0" onAction="#showCorreoElec" onKeyTyped="#eventKey" prefHeight="26.0" prefWidth="177.0" promptText="Correo electronico " style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" />
+                  <PasswordField fx:id="fieldContra" layoutX="34.0" layoutY="187.0" onAction="#showFieldContra" onKeyTyped="#eventKey" prefHeight="25.0" prefWidth="180.0" promptText="Contraseña" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" />
+                  <Button fx:id="btnIniciarSesion" layoutX="68.0" layoutY="308.0" mnemonicParsing="false" onAction="#showIniciarSesion" onMouseClicked="#showIniciarSesion" prefHeight="28.0" prefWidth="135.0" style="-fx-background-color: #212529;" text="Iniciar sesion" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnMenu" layoutX="68.0" layoutY="40.0" mnemonicParsing="false" onAction="#showBienvenida" prefHeight="45.0" prefWidth="111.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagenes/imagen_2023-06-08_193029193.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Text layoutX="42.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Label contentDisplay="RIGHT" layoutX="31.0" layoutY="249.0" text="No tienes una cuenta?" textFill="#f5f5f5">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                     <graphic>
+                        <Button fx:id="btnCrearCuenta" mnemonicParsing="false" onAction="#showCrearCuenta" style="-fx-background-color: transparent;" text="Crea tu cuenta Gratis" textFill="#ffba08">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </graphic>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane prefHeight="400.0" prefWidth="331.0" style="-fx-background-color: #325;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="400.0" prefWidth="332.0">
+                     <children>
+                        <ImageView fitHeight="656.0" fitWidth="642.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagenes/starry-sky-4k-night-night-sky-galaxy-scaled.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
